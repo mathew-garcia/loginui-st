@@ -101,7 +101,7 @@ label {
     radial-gradient(5px 5px at 350px 500px, #fff, transparent);
     background-size: 650px 650px;
 
-    animation: snowAnim 5s linear;
+    animation: snowAnim 10s linear;
     animation-iteration-count: infinite;
 }
 .snow::after {
