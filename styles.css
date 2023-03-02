@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
+/* background */
 .container {
     display: flex;
     height: 100vh;
@@ -17,7 +17,70 @@
     align-items: center;
     flex-direction: column;
 }
-/* start of coding for animation sourced from https://www.youtube.com/watch?v=IxG5cQCIVE8 by Invention Tricks */
+/* login form, inputs, buton */
+.login-form {
+    display: flex;
+    background-color: #bdbdbd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px #fff, 1px 1px #000;
+    width: 500px;
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.input-fields {
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px 50px;
+    text-align: left;
+}
+#submit {
+   margin-top: 15px;
+   padding: 10px 90px;
+   box-shadow: inset 1px 1px #fff, 1px 1px #000;
+   background-color: #bdbdbd;
+}
+#submit:hover {
+    transform: scale(1.1);
+}
+h1 {
+    font-size: 60px;
+    background: linear-gradient(90deg, hsla(240, 100%, 25%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    width: 500px;
+    color: #fff;
+}
+label {
+    display: block;
+    text-align: left;
+}
+.rememberMe {
+    display: inline;
+    padding-left: 5px;
+}
+/* responsive flexbox code */
+@media (max-width: 900px) {
+    .login-form {
+      max-width: 300px;
+      max-height: 500px;
+    }
+    h1 {
+        width: 300px;
+        font-size: 40px;
+    }
+    #submit {
+        margin-top: 10px;
+        padding: 6px 60px;
+        box-shadow: inset 1px 1px #fff, 1px 1px #000;
+        background-color: #bdbdbd;
+    }
+    .logo {
+        height: 150px;
+    }
+  }
+/* start of coding for snow animation sourced from https://www.youtube.com/watch?v=IxG5cQCIVE8 by Invention Tricks */
 .snow, .snow::after, .snow::before {
     content: "";
     position:absolute;
@@ -65,49 +128,4 @@
 }
 .snow {
     z-index: -1;
-}
-/* end of coding for animation */
-.login-form {
-    display: flex;
-    background-color: #bdbdbd;
-    height: 600px;
-    width: 500px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: inset 1px 1px #fff, 1px 1px #000;
-    min-width: 500px;
-    min-height: 600px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.input-fields {
-    overflow: hidden;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 10px 50px;
-    text-align: left;
-}
-#submit {
-   margin-top: 15px;
-   padding: 10px 90px;
-   box-shadow: inset 1px 1px #fff, 1px 1px #000;
-   background-color: #bdbdbd;
-}
-#submit:hover {
-    transform: scale(1.1);
-}
-h1 {
-    font-size: 60px;
-    background: linear-gradient(90deg, hsla(240, 100%, 25%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-    width: 500px;
-    color: #fff;
-}
-label {
-    display: block;
-    text-align: left;
-}
-.rememberMe {
-    display: inline;
-    padding-left: 5px;
 }
